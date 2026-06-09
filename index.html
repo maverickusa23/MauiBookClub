@@ -1,0 +1,176 @@
+web application/stitch/projects/5209207180206971124/screens/b6a9c138202a4591b30cbd119de1fc9d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maui Book Club | index.html</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --surface: #fdf9f3;
+            --on-surface: #1d1b1a;
+            --primary: #00778b;
+            --secondary: #006874;
+            --surface-container-low: #f7f3ed;
+            --outline-variant: #ddd9d4;
+        }
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: var(--surface);
+            color: var(--on-surface);
+        }
+        .bg-surface-container-low { background-color: var(--surface-container-low); }
+        .text-primary { color: var(--primary); }
+        .text-on-surface-variant { color: #4e463d; }
+    </style>
+</head>
+<body class="min-h-screen pb-24">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-outline-variant px-4 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <img src="{{DATA:IMAGE:IMAGE_57}}" alt="Logo" class="w-8 h-8 rounded-lg shadow-sm">
+            <h1 class="text-xl font-bold text-primary">Maui Book Club</h1>
+        </div>
+        <button class="p-2 rounded-full hover:bg-black/5 transition-colors">
+            <span class="material-icons">settings</span>
+        </button>
+    </header>
+
+    <main class="max-w-md mx-auto px-4 py-6 space-y-8">
+        
+        <!-- Welcome Section -->
+        <section class="space-y-4">
+            <div class="flex justify-between items-start">
+                <div class="space-y-1">
+                    <h2 class="text-3xl font-bold leading-tight">Welcome to the Maui Book Club</h2>
+                    <p class="text-on-surface-variant italic">Aloha! Let's dive into our next chapter together.</p>
+                </div>
+                <button class="p-2 border border-outline-variant rounded-full text-on-surface-variant">
+                    <span class="material-icons text-sm">edit</span>
+                </button>
+            </div>
+
+            <!-- Family Photo -->
+            <div class="relative group">
+                <img src="{{DATA:IMAGE:IMAGE_40}}" alt="La Familia Beach Photo" class="w-full h-56 object-cover rounded-3xl shadow-lg">
+                <button class="absolute bottom-4 right-4 bg-white/90 p-2 rounded-full shadow-md text-on-surface-variant hover:scale-110 transition-transform">
+                    <span class="material-icons">edit</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Currently Reading -->
+        <section class="bg-surface-container-low rounded-3xl p-6 space-y-6 border border-outline-variant/30">
+            <div class="relative flex justify-center">
+                <div class="relative w-48 shadow-2xl rounded-sm overflow-hidden transform -rotate-1">
+                    <img src="{{DATA:IMAGE:IMAGE_11}}" alt="The Guest List Cover" class="w-full">
+                    <div class="absolute inset-0 border-l-4 border-black/10"></div>
+                </div>
+            </div>
+
+            <div class="text-center space-y-1">
+                <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Currently Reading</span>
+                <h3 class="text-2xl font-bold italic">The Guest List</h3>
+                <p class="text-on-surface-variant">by Lucy Foley</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex justify-between items-end text-sm">
+                    <span class="font-bold">Overall Family Progress</span>
+                    <span class="text-primary font-bold">64%</span>
+                </div>
+                <div class="w-full h-3 bg-white rounded-full overflow-hidden border border-outline-variant">
+                    <div class="h-full bg-primary w-[64%] rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <div class="flex items-center gap-3 py-2 border-b border-outline-variant/50">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Arthur" class="w-8 h-8 rounded-full bg-white">
+                    <div class="flex-1 flex justify-between text-xs">
+                        <span class="font-bold">Grandpa Arthur</span>
+                        <span class="text-on-surface-variant">Chapter 14</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 py-2 border-b border-outline-variant/50">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" class="w-8 h-8 rounded-full bg-white">
+                    <div class="flex-1 flex justify-between text-xs">
+                        <span class="font-bold">Sarah</span>
+                        <span class="text-on-surface-variant">Chapter 11</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="w-full bg-[#005a6a] text-white font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-all">
+                Open Reader
+            </button>
+        </section>
+
+        <!-- Prediction Callout -->
+        <section class="bg-[#a65d57] text-white rounded-3xl p-6 space-y-4 shadow-xl">
+            <div class="flex items-center gap-2 text-xs uppercase tracking-widest font-bold opacity-90">
+                <span class="material-icons text-sm">help_outline</span>
+                Next Prediction Due
+            </div>
+            <h4 class="text-xl font-bold">What secret lies within the Cemetery of Forgotten Books?</h4>
+            
+            <div class="bg-black/10 rounded-xl p-4 space-y-2 border border-white/10">
+                <div class="flex justify-between text-[10px] font-bold opacity-80 uppercase">
+                    <span>Checkpoint</span>
+                    <span>Chapter 10</span>
+                </div>
+                <p class="text-sm italic">"The secret is not in the place, but in the person who finds it..."</p>
+            </div>
+
+            <div class="flex gap-1">
+                <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px]">L</div>
+                <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px]">M</div>
+                <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-[10px]">+2</div>
+            </div>
+
+            <button class="w-full bg-white text-[#a65d57] font-bold py-3 rounded-xl shadow-md">
+                Cast Your Prediction
+            </button>
+        </section>
+
+        <!-- Family Streak -->
+        <section class="bg-surface-container-low rounded-2xl p-4 flex justify-between items-center border border-outline-variant/30">
+            <div class="space-y-1">
+                <span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-bold">Family Streak</span>
+                <div class="text-xl font-bold text-primary">12 Days</div>
+            </div>
+            <div class="bg-[#b7e497] p-3 rounded-xl">
+                <span class="material-icons text-on-surface">menu_book</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-outline-variant px-6 py-3 flex justify-between items-center z-50">
+        <button class="flex flex-col items-center gap-1 text-primary">
+            <div class="bg-[#b7e497] px-5 py-1 rounded-full">
+                <span class="material-icons">home</span>
+            </div>
+            <span class="text-[10px] font-bold">Home</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 text-on-surface-variant">
+            <span class="material-icons">import_contacts</span>
+            <span class="text-[10px] font-bold">Book</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 text-on-surface-variant">
+            <span class="material-icons">psychology_alt</span>
+            <span class="text-[10px] font-bold">Predictions</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 text-on-surface-variant">
+            <span class="material-icons">group</span>
+            <span class="text-[10px] font-bold">Family</span>
+        </button>
+    </nav>
+
+</body>
+</html>
